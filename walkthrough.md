@@ -17,7 +17,7 @@ An XNOR gate has the following logic:
     \Delta=\begin{bmatrix}
     \delta^{(1)} & \delta^{(2)} & \delta^{(3)}
     \end{bmatrix}\\newline
-    a^{(L)} = \text{Output layer}\\newline\\newline
+    a^{(L)} = \text{Output layer}\\
 [/math]
 
 #### First we feed the input into $$a^{(1)}$$
