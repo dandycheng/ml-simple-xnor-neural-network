@@ -37,7 +37,9 @@ An XNOR gate has the following logic:
 # Feedforward
 #### To feedforward, we pass the weighted sum into the Sigmoid activation function:
 
-[math]\sigma(\sum_{i=0}^{S_l}\sum_{j=1}^{S_{l+1}}a_{i}^{(l)}\theta_{ji}^{(l)}) = \sigma(\Theta^{(l)}A^{(l)})[/math]
+[math]
+    \sigma(\sum_{i=0}^{S_l}\sum_{j=1}^{S_{l+1}}a_{i}^{(l)}\theta_{ji}^{(l)}) = \sigma(\Theta^{(l)}A^{(l)})
+[/math]
 
 #### After feeding forward for training example $$x^{(t)}$$, we now perform backpropagation by calculating error for each layer:
 
