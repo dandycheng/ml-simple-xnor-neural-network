@@ -32,7 +32,8 @@ An XNOR gate has the following logic:
     \end{bmatrix}\newline
     a^{(L)} = \text{Output layer}\newline\newline
 [/math]
-#### First we feed the input into $a^{(1)}$
+
+#### First we feed the input into $$a^{(1)}$$
 # Feedforward
 #### To feedforward, we pass the weighted sum into the Sigmoid activation function:
 
@@ -40,16 +41,19 @@ An XNOR gate has the following logic:
     \sigma(\sum_{i=0}^{S_l}\sum_{j=1}^{S_{l+1}}a_{i}^{(l)}\theta_{ji}^{(l)}) = \sigma(\Theta^{(l)}A^{(l)})
 [/math]
 
-#### After feeding forward for training example $x^{(t)}$, we now perform backpropagation by calculating error for each layer:
+#### After feeding forward for training example $$x^{(t)}$$, we now perform backpropagation by calculating error for each layer:
 
 #Backpropagation
-The error for layer $l$ is calculated as:
+The error for layer $$l$$ is calculated as:
+
 [math]
     \frac{\partial J(\Theta)}{\partial\Theta^{(l)}} = 
     \frac{\partial J(\Theta)}{\partial a^{(l)}}
     \frac{\partial a^{(l)}}{\partial z^{(l)}}
     \frac{\partial z^{(l)}}{\partial \Theta^{(l)}}\newline\newline
 [/math]
+
+
 #### Without going too much into detail, the formula for the error in layer $l$ is:
 
 [math]
@@ -61,11 +65,13 @@ The error for layer $l$ is calculated as:
         \end{cases}
 [/math]
 
+
 #### After calculating the error, we can update the weights with the following:
 
 [math]
         \Theta^{(l)}:=\Theta^{(l)} - \alpha \frac{\partial J(\Theta)}{\partial \Theta^{(l)}}\equiv \Theta^{(l)} - \frac{\alpha}{m} a^{(l)}\delta^{(l)}
 [/math]
+
 
 #### To update biases, the following update rule is performed:
 
