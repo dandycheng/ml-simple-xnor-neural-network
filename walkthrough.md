@@ -23,14 +23,14 @@ An XNOR gate has the following logic:
 [math]
     \Theta = \begin{bmatrix}
     \theta^{(1)} & \theta^{(2)}
-    \end{bmatrix}\\
+    \end{bmatrix}\newline
     A=\begin{bmatrix}
     a^{(1)} & a^{(2)} & a^{(3)}
-    \end{bmatrix}\\
+    \end{bmatrix}\newline
     \Delta=\begin{bmatrix}
     \delta^{(1)} & \delta^{(2)} & \delta^{(3)}
-    \end{bmatrix}\\
-    a^{(L)} = \text{Output layer}\\\\
+    \end{bmatrix}\newline
+    a^{(L)} = \text{Output layer}\newline\newline
 [/math]
 #### First we feed the input into $a^{(1)}$
 # Feedforward
@@ -48,14 +48,14 @@ The error for layer $l$ is calculated as:
     \frac{\partial J(\Theta)}{\partial\Theta^{(l)}} = 
     \frac{\partial J(\Theta)}{\partial a^{(l)}}
     \frac{\partial a^{(l)}}{\partial z^{(l)}}
-    \frac{\partial z^{(l)}}{\partial \Theta^{(l)}}\\\\
+    \frac{\partial z^{(l)}}{\partial \Theta^{(l)}}\newline\newline
 [/math]
 #### Without going too much into detail, the formula for the error in layer $l$ is:
 
 [math]
-    \text{for }0...L:\\
+    \text{for }0...L:\newline
     \delta^{(l)}=\begin{cases}
-        y^{(t)} - a^{(L)}, \text{if }l = L\\
+        y^{(t)} - a^{(L)}, \text{if }l = L\newline
         ((\Theta^{(l)})^T \delta^{(l + 1)}) \circ a^{(l)}
     \circ (1 - a^{(l)}), \text{if }l < L - 2
         \end{cases}
