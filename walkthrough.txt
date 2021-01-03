@@ -10,14 +10,23 @@ An XNOR gate has the following logic:
 [math]
     \Theta = \begin{bmatrix}
     \theta^{(1)} & \theta^{(2)}
-    \end{bmatrix}\\\\
+    \end{bmatrix
+[/math]
+
+[math]
     A=\begin{bmatrix}
     a^{(1)} & a^{(2)} & a^{(3)}
-    \end{bmatrix}\\\\
+    \end{bmatrix}
+[/math]
+
+[math]
     \Delta=\begin{bmatrix}
     \delta^{(1)} & \delta^{(2)} & \delta^{(3)}
-    \end{bmatrix}\\\\
-    a^{(L)} = \text{Output layer}\\\\
+    \end{bmatrix}
+[/math]
+
+[math]
+    a^{(L)} = \text{Output layer}
 [/math]
 
 #### First we feed the input into $$a^{(1)}$$
@@ -35,7 +44,7 @@ The error for layer $$l$$ is calculated as:
     \frac{\partial J(\Theta)}{\partial\Theta^{(l)}} = 
     \frac{\partial J(\Theta)}{\partial a^{(l)}}
     \frac{\partial a^{(l)}}{\partial z^{(l)}}
-    \frac{\partial z^{(l)}}{\partial \Theta^{(l)}}\\\\\\\\
+    \frac{\partial z^{(l)}}{\partial \Theta^{(l)}}
 [/math]
 
 
