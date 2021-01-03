@@ -10,7 +10,7 @@ An XNOR gate has the following logic:
 [math]
     \Theta = \begin{bmatrix}
     \theta^{(1)} & \theta^{(2)}
-    \end{bmatrix
+    \end{bmatrix}
 [/math]
 
 [math]
