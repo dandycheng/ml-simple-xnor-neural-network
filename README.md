@@ -1,6 +1,6 @@
 # ml-simple-xnor-neural-network
 
-### The mathematical explanation regarding neural network is in the Jupyter file in this repository. You can also browse my [portfolio](dandycheng.github.io) for the walkthrough.
+### The mathematical explanation regarding neural network is in the Jupyter file in this repository.
 
 This is a simple neural network that predicts an XNOR gate output.
 
